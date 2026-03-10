@@ -1,0 +1,129 @@
+:root {
+	--color-primary: #2563eb;
+	--color-text: #1f2937;
+	--color-text-light: #6b7280;
+	--color-bg: #ffffff;
+	--color-bg-alt: #f9fafb;
+	--space-sm: 0.5rem;
+	--space-md: 1rem;
+	--space-lg: 2rem;
+	--space-xl: 4rem;
+	--font-base: system-ui, -apple-system, sans-serif;
+	--line-height: 1.6;
+}
+
+body {
+	font-family: var(--font-base);
+	line-height: var(--line-height);
+	color: var(--color-text);
+	margin: 0;
+}
+
+.cta:hover {
+	color: #fff;
+}
+h1, h2, h3 {
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none; color: inherit; transition: color 0.2s;
+}
+
+ul {
+	list-style: none; padding: 0; margin: 0;
+}
+
+a:hover {
+	color: var(--color-primary);
+}
+
+header, footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--space-md) var(--space-lg);
+	flex-wrap: wrap;
+}
+
+header nav ul, footer nav ul {
+	display: flex;
+	gap: var(--space-lg);
+}
+
+.logo {
+	font-weight: bold;
+	color: var(--color-primary);
+	font-size: 1.5rem;
+}
+
+footer {
+	background: var(--color-bg-alt);
+	border-top: 1px solid #eee;
+	color: var(--color-text-light);
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	min-height: 60vh;
+	justify-content: center;
+	padding: var(--space-xl) var(--space-lg);
+	background: var(--color-bg-alt);
+}
+
+.cta {
+	background: var(--color-primary);
+	color: #fff;
+	padding: var(--space-md) var(--space-lg);
+	border-radius: 0.5rem;
+}
+
+.projets {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: var(--space-lg);
+	padding: var(--space-xl) var(--space-lg);
+}
+
+.carte {
+	padding: var(--space-lg);
+	background: var(--color-bg-alt);
+	border-radius: 0.5rem;
+	border: 1px solid #eee;
+	transition: 0.2s;
+}
+
+.carte:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.apropos {
+	padding: var(--space-xl) var(--space-lg);
+}
+
+.apropos-contenu {
+	display: flex;
+	gap: var(--space-lg);
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+
+	header, footer {
+		flex-direction: column;
+		gap: var(--space-md);
+		text-align: center;
+	}
+	header nav ul, footer nav ul {
+		flex-direction: column;
+		gap: var(--space-sm);
+	}
+	.hero {
+		min-height: 40vh;
+	}
+}
