@@ -19,4 +19,4 @@
   là ? -> Ajoute-la
   *   Le CSS gère le style : Si la classe est là, fais ceci.
 
-Aucune IA vu que j'etais absent.
+Aucune utilisation de l'IA
